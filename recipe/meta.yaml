@@ -16,6 +16,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
+  merge_build_host: True  # [win]
   number: 1002
   skip: true  # [win32]
   rpaths:
@@ -25,6 +26,9 @@ build:
 requirements:
   build:
     - posix                # [win]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('cxx') }}        # [unix]
