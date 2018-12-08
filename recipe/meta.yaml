@@ -1,5 +1,4 @@
-{% set version = '1.1.0' %}
-
+{% set version = '1.2.1' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -12,21 +11,20 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/PhylogeneticEM_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/PhylogeneticEM/PhylogeneticEM_{{ version }}.tar.gz
-  sha256: 5319d95cd0626c2c9ee064bc64ad8cd2f9dc67ebbc66ad556936dc07fa47274a
+  sha256: db72bedbf2c7f5d87eda3a25cb1168aad6480c96f08e602dfd2df812a4f23457
 
 build:
   merge_build_host: True  # [win]
-  number: 2
-  skip: true  # [win32]
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
+    - posix                       # [win]
+    - {{ compiler('c') }}         # [unix]
+    - {{ compiler('m2w64_c') }}   # [win]
     - {{ compiler('cxx') }}        # [unix]
     - {{ compiler('m2w64_cxx') }}  # [win]
   host:
@@ -43,7 +41,7 @@ requirements:
     - r-grplasso >=0.4_5
     - r-plyr >=1.8.4
     - r-robustbase >=0.92.6
-
+    - r-gglasso
   run:
     - r-base
     - r-linselect >=0.0.2
@@ -58,6 +56,7 @@ requirements:
     - r-grplasso >=0.4_5
     - r-plyr >=1.8.4
     - r-robustbase >=0.92.6
+    - r-gglasso
 
 test:
   commands:
@@ -71,8 +70,7 @@ about:
     Ornstein-Uhlenbeck (OU) models of trait evolution on phylogenies. Some tools to handle
     equivalent shifts configurations are also available."
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
