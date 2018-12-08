@@ -26,9 +26,6 @@ build:
 requirements:
   build:
     - posix                # [win]
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
-  host:
     - {{ compiler('c') }}        # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('cxx') }}        # [unix]
@@ -47,7 +44,6 @@ requirements:
     - r-grplasso >=0.4_5
     - r-plyr >=1.8.4
     - r-robustbase >=0.92.6
-
   run:
     - r-base
     - r-linselect >=0.0.2
