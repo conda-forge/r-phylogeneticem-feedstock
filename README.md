@@ -3,11 +3,11 @@ About r-phylogeneticem
 
 Home: https://github.com/pbastide/PhylogeneticEM
 
-Package license: GPL (>= 2)
+Package license: GPL-2
 
 Feedstock license: BSD 3-Clause
 
-Summary: Implementation of the automatic shift detection method for Brownian Motion (BM) or Ornstein-Uhlenbeck (OU) models of trait evolution on phylogenies. Some tools to handle equivalent shifts configurations are also available.
+Summary: Implementation of the automatic shift detection method for Brownian Motion (BM) or Ornstein–Uhlenbeck (OU) models of trait evolution on phylogenies. Some tools to handle equivalent shifts configurations are also available. See Bastide et al. (2017) <doi:10.1111/rssb.12206> and Bastide et al. (2018) <doi:10.1093/sysbio/syy005>.
 
 
 
@@ -29,45 +29,24 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_r_base3.5.1</td>
+              <td>linux_r_base3.6target_platformlinux-64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3428&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.5.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.6target_platformlinux-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_r_base3.6</td>
+              <td>osx_r_base3.6target_platformosx-64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3428&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=linux&configuration=linux_r_base3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.6target_platformosx-64" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_r_base3.5.1</td>
+              <td>win_r_base3.6target_platformwin-64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3428&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.5.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_r_base3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3428&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=osx&configuration=osx_r_base3.6" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_r_base3.5.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3428&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=win&configuration=win_r_base3.5.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_r_base3.6</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3428&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=win&configuration=win_r_base3.6" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-phylogeneticem-feedstock?branchName=master&jobName=win&configuration=win_r_base3.6target_platformwin-64" alt="variant">
                 </a>
               </td>
             </tr>
@@ -176,10 +155,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@daler](https://github.com/daler/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
 
