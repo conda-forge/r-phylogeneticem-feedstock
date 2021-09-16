@@ -1,4 +1,4 @@
-{% set version = '1.4.0' %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PhylogeneticEM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PhylogeneticEM/PhylogeneticEM_{{ version }}.tar.gz
-  sha256: 9c5cc7872f0153581cea59f64ddd7ec8433fa4ca0831cc8fd8b0a3cc3fa34191
+  sha256: fc8616f958210a1185a3f943cbc34287a4ca966e1876fa0d0803e927b5368db9
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -68,13 +68,10 @@ test:
 about:
   home: https://github.com/pbastide/PhylogeneticEM
   license: GPL-2.0-or-later
-  summary: "Implementation of the automatic shift detection method for Brownian Motion (BM) or
-    Ornstein\u2013Uhlenbeck (OU) models of trait evolution on phylogenies. Some tools
-    to handle equivalent shifts configurations are also available. See Bastide et al.
-    (2017) <doi:10.1111/rssb.12206> and Bastide et al. (2018) <doi:10.1093/sysbio/syy005>."
+  summary: Implementation of the automatic shift detection method for Brownian Motion (BM) or Ornstein–Uhlenbeck (OU) models of trait evolution on phylogenies. Some tools to handle equivalent shifts configurations are also available. See Bastide et al. (2017) <doi:10.1111/rssb.12206> and Bastide et al. (2018) <doi:10.1093/sysbio/syy005>.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - LICENSE
 
 extra:
