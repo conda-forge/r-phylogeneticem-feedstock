@@ -1,4 +1,4 @@
-{% set version = "1.6.0" %}
+{% set version = "1.7.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PhylogeneticEM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PhylogeneticEM/PhylogeneticEM_{{ version }}.tar.gz
-  sha256: c526739c48a40a89985f4529c17e1594d6ec0da72174e341c1a53c8844a80228
+  sha256: dd5fa3dd3ef6cb44842b41d2ddb0841d82d0cc480972736e8c0c4a53e508affb
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
