@@ -3,6 +3,7 @@ About r-phylogeneticem-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-phylogeneticem-feedstock/blob/main/LICENSE.txt)
 
+
 About r-phylogeneticem
 ----------------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/pbastide/PhylogeneticEM
 Package license: GPL-2.0-or-later
 
 Summary: Implementation of the automatic shift detection method for Brownian Motion (BM) or Ornstein–Uhlenbeck (OU) models of trait evolution on phylogenies. Some tools to handle equivalent shifts configurations are also available. See Bastide et al. (2017) <doi:10.1111/rssb.12206> and Bastide et al. (2018) <doi:10.1093/sysbio/syy005>.
+
 About r-phylogeneticem
 ----------------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
