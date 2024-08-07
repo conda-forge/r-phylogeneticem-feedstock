@@ -1,6 +1,5 @@
 {% set version = "1.7.0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-phylogeneticem
@@ -13,8 +12,7 @@ source:
   sha256: dd5fa3dd3ef6cb44842b41d2ddb0841d82d0cc480972736e8c0c4a53e508affb
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -46,7 +46,6 @@ requirements:
     - r-robustbase >=0.92.6
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-linselect >=1.1.1
     - r-mass >=7.3.45
     - r-matrix >=1.2.3
