@@ -1,4 +1,4 @@
-{% set version = "1.7.0" %}
+{% set version = "1.8.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/PhylogeneticEM_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/PhylogeneticEM/PhylogeneticEM_{{ version }}.tar.gz
-  sha256: dd5fa3dd3ef6cb44842b41d2ddb0841d82d0cc480972736e8c0c4a53e508affb
+  sha256: 81dbf09395eb5277dd9ed078464fdda393e8f024bca8761e4470fd4afb81ef70
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
