@@ -16,6 +16,10 @@ build:
   rpaths:
     - lib/R/lib/
     - lib/
+  missing_dso_whitelist:
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -34,7 +38,7 @@ requirements:
     - r-base
     - r-linselect >=1.1.1
     - r-mass >=7.3.45
-    - r-matrix >=1.2.3
+    - r-matrix >=1.2.18
     - r-rcpp >=1.0.2
     - r-rcpparmadillo
     - r-ape >=5.3
@@ -48,7 +52,7 @@ requirements:
     - r-base
     - r-linselect >=1.1.1
     - r-mass >=7.3.45
-    - r-matrix >=1.2.3
+    - r-matrix >=1.2.18
     - r-rcpp >=1.0.2
     - r-rcpparmadillo
     - r-ape >=5.3
